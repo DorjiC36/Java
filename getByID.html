@@ -2,13 +2,46 @@
 <html>
     <head>
         <title> DOM Demo </title>
+        <script>
+            document.addEventListener("DOMContentLoaded",() => {
+                //let heading = documnet.getElementById("container")
+                
+                //heading.innerHTML = "Title changed by JavaScript code";
+                //console.dir(heading);
+
+                //let headings = document.getElementsByClassName("heading");
+                //console.dir("headings");
+                
+                let firstElement = document.querySelector(".heading");
+                console.dir(firstElement);
+
+                firstElement.style.color = "blue";
+                
+                document.getElementById("myBtn").addEventListener("click"),function() {
+                    alert("You've successfully triggered the click event!");
+            });
+            });
+            </script>
     </head>
     <body>
+        <div class = "heading">
         <h1 id="container">Example of accessing element by ID</h1>
+        </div>
         <script>
+            document.addEventListener("DOMContentLoaded",() => {
             let heading = document.getElementById("container");
-             heading.innerHTML = "Title changed by JavaScript code";
-             console.dir(heading);
+
+            heading.innerHTML = "Title changed by JavaScript code";
+            console.dir(heading);
+
+            //let headings = document.getElementsByClassName("heading");
+            //console.dir(headings);
+
+            let firstElement = document.querySelector("heading");
+            console.dir(firstElement);
+
+            firstElement.style.color = "blue";
+        });
         </script>
     </body>
 </html>
